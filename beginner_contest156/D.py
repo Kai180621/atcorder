@@ -8,9 +8,10 @@ def cmb(n, r):
     nCr[(n,r)] = cmb(n-1,r) + cmb(n-1,r-1)
     return nCr[(n,r)]
 
-all_pattern = 2 ** n - 1
-ex_a_pattern = cmb(n,a)
-ex_b_pattern = cmb(n,b)
 
-ans = (all_pattern - ex_a_pattern - ex_b_pattern) % (10 ** 9 + 7)
-print(ans)
+
+if a == 1 and b == 1:
+  print(0)
+else:
+  all_pattern = pow(2, n) % (10 ** 9 + 7)
+  ex_a_pattern = 
