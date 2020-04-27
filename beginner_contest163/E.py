@@ -1,6 +1,8 @@
 n = int(input())
 aes = list(map(int, input().split()))
 
+aes_left = aes[:]
+
 ans = 0
 i = 0
 while i < n // 2:
